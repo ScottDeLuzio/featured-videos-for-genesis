@@ -1,6 +1,9 @@
+.gfv{
+	max-width: 100%;
+}
 .gfvleft{
-  float:left;
+	float:left;
 }
 .gfvright{
-  float:right;
+	float:right;
 }

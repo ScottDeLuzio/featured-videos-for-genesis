@@ -3,7 +3,7 @@
 Plugin Name: Featured Videos for Genesis
 Plugin URI: https://scottdeluzio.com
 Description: Adds a video post format with video thumbnail replacing featured image.
-Version: 1.0.1
+Version: 1.1.1
 Author: Scott DeLuzio
 Author URI: https://scottdeluzio.com
 Text Domain: genesis-featuerd-video
@@ -65,3 +65,5 @@ include( GENESIS_FEATURED_VIDEO_PLUGIN_DIR . '/includes/gfv-metabox.php' );
 include( GENESIS_FEATURED_VIDEO_PLUGIN_DIR . '/includes/gfv-settings.php' );
 /* Post Types */
 include( GENESIS_FEATURED_VIDEO_PLUGIN_DIR . '/includes/gfv-post-types.php' );
+/* Widget */
+include( GENESIS_FEATURED_VIDEO_PLUGIN_DIR . '/includes/widget.php' );
