@@ -3,8 +3,8 @@ Contributors: scott.deluzio
 Tags: Genesis,featured video,featured image
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KFRZN69AUU99U
 Requires at least: 3.1.0
-Tested up to: 4.8.1
-Stable tag: 1.1.1
+Tested up to: 4.8.2
+Stable tag: 1.1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -116,7 +116,19 @@ function sd_remove_post_image(){
 	remove_action( 'genesis_entry_header', 'genesis_do_post_image', 1 );
 }`
 
+You'll also want to add it back later on in the loop if there are other posts without a featured video. You can do so with the following hook:
+`add_action( 'gfv_add_post_image', 'sd_add_post_image' );
+function sd_add_post_image(){
+	/* This is an example of the action that inserts the featured image into your blog page.
+	 * add_action( 'genesis_entry_header', 'genesis_do_post_image', 1 );
+	 * Copy yours below.
+	 */
+    add_action( 'genesis_entry_header', 'genesis_do_post_image', 1 );
+}`
+
 == Changelog ==
+= 1.1.2 =
+* Update: Added hook `gfv_add_post_image` to let theme developers add back featured images that were removed with `gfv_remove_post_image`.
 = 1.1.1 =
 * New: Added a hook `gfv_remove_post_image` to let theme developers remove featured images that are inserted with actions this plugin doesn't consider. 
 = 1.1.0 =
@@ -129,5 +141,5 @@ function sd_remove_post_image(){
 * Initial release
 
 == Update Notice ==
-= 1.1.1 =
-* New: Added a hook `gfv_remove_post_image` to let theme developers remove featured images that are inserted with actions this plugin doesn't consider. 
+= 1.1.2 =
+* Update: Added hook `gfv_add_post_image` to let theme developers add back featured images that were removed with `gfv_remove_post_image`.
