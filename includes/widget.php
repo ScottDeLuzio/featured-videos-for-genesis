@@ -26,7 +26,7 @@ class SD_Genesis_Featured_Video extends WP_Widget {
 	/**
 	 * Constructor. Set the default widget options and create widget.
 	 *
-	 * @since 0.1.8
+	 * @since 1.0
 	 */
 	public function __construct() {
 
@@ -79,7 +79,7 @@ class SD_Genesis_Featured_Video extends WP_Widget {
 	/**
 	 * Echo the widget content.
 	 *
-	 * @since 0.1.8
+	 * @since 1.0
 	 *
 	 * @global WP_Query $wp_query               Query object.
 	 * @global array    $_genesis_displayed_ids Array of displayed post IDs.
@@ -138,7 +138,7 @@ class SD_Genesis_Featured_Video extends WP_Widget {
 				'context' => 'featured-post-widget',
 				'attr'    => genesis_parse_attr( 'entry-image-widget', array ( 'alt' => get_the_title() ) ),
 			) );
-			
+
 			$video = get_post_meta( get_the_ID(), '_gfv_video_url', true );
 
 			/* We don't want the featured image AND featured video to show at the same time.
@@ -191,7 +191,7 @@ class SD_Genesis_Featured_Video extends WP_Widget {
 					/**
 					 * Filter the featured post widget title.
 					 *
-					 * @since  2.2.0
+					 * @since  1.0
 					 *
 					 * @param string $title    Featured post title.
 					 * @param array  $instance {
@@ -391,7 +391,7 @@ class SD_Genesis_Featured_Video extends WP_Widget {
 	 * The newly calculated value of $instance should be returned.
 	 * If "false" is returned, the instance won't be saved/updated.
 	 *
-	 * @since 0.1.8
+	 * @since 1.0
 	 *
 	 * @param array $new_instance New settings for this instance as input by the user via `form()`.
 	 * @param array $old_instance Old settings for this instance.
@@ -411,7 +411,7 @@ class SD_Genesis_Featured_Video extends WP_Widget {
 	/**
 	 * Echo the settings update form.
 	 *
-	 * @since 0.1.8
+	 * @since 1.0
 	 *
 	 * @param array $instance Current settings.
 	 * @return void
@@ -624,7 +624,7 @@ class SD_Genesis_Featured_Video extends WP_Widget {
 					<input id="<?php echo esc_attr( $this->get_field_id( 'show_video' ) ); ?>" type="checkbox" name="<?php echo esc_attr( $this->get_field_name( 'show_video' ) ); ?>" value="1" <?php checked( $instance['show_video'] ); ?>/>
 					<label for="<?php echo esc_attr( $this->get_field_id( 'show_video' ) ); ?>"><?php _e( 'Show Featured Video', 'genesis' ); ?></label>
 				</p>
-				
+
 				<p>
 					Enter number in px.
 				</p>

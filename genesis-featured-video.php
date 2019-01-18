@@ -1,12 +1,12 @@
 <?php
 /*
 Plugin Name: Featured Videos for Genesis
-Plugin URI: https://scottdeluzio.com
+Plugin URI: https://amplifyplugins.com
 Description: Adds a video post format with video thumbnail replacing featured image.
-Version: 1.1.2
+Version: 1.1.3
 Author: Scott DeLuzio
 Author URI: https://scottdeluzio.com
-Text Domain: genesis-featuerd-video
+Text Domain: genesis-featured-video
 */
 
 if ( !defined( 'ABSPATH' ) ) {

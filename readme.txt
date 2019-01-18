@@ -3,8 +3,8 @@ Contributors: scott.deluzio
 Tags: Genesis,featured video,featured image
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KFRZN69AUU99U
 Requires at least: 3.1.0
-Tested up to: 4.8.2
-Stable tag: 1.1.2
+Tested up to: 5.0.3
+Stable tag: 1.1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -26,7 +26,7 @@ Custom post types are supported, so you can use this plugin to show product demo
 
 == Frequently Asked Questions ==
 = How do I add a featured video? =
-On the post edit page, there are two areas for you to look for. The first is titled "Format". The second is titled "Genesis Featured Video". 
+On the post edit page, there are two areas for you to look for. The first is titled "Format". The second is titled "Genesis Featured Video".
 
 On each post that you want to display a featured video on the archive page select "Video" from the Format section, and paste the URL to a video in the Genesis Featured Video section. Update or publish your post, and you should see your video replace the featured image on your blog or archive page.
 
@@ -44,10 +44,10 @@ If you are trying to remove the functionality altogether from certain post types
 		'post',
 		'book',
 	);
- 
+
 	// set $post_types to your cpt array
 	$post_types = $my_cpts;
- 
+
 	return $post_types;
 }
 add_filter( 'gfv_post_types', 'change_post_types' );`
@@ -64,7 +64,7 @@ Check the box to enable featured videos in the widget, then enter the width and 
 
 All other settings are the same as the Genesis Featured Posts widget.
 
-= I only have some posts with featued videos, can the widget display featured images too? =
+= I only have some posts with featured videos, can the widget display featured images too? =
 
 If you only have some posts with featured videos, you can also check the Show Featured Image box to allow a featured image to be displayed when there is no featured video. A featured image and featured video will not both display at the same time, so if your post has both, only the featured video will display.
 
@@ -83,7 +83,7 @@ Width and height need to be entered in pixels.
 
 Alignment is currently set to left, right, or none.
 
-= Can I add any customizations to the video? =
+= Can I add any customization to the video? =
 The video will be wrapped in a `<div>` with one of the following classes depending on the position you select in the settings.
 
 * gfvleft
@@ -127,10 +127,12 @@ function sd_add_post_image(){
 }`
 
 == Changelog ==
+= 1.1.3 =
+* Update: Corrected text domain, and minor formatting tweaks.
 = 1.1.2 =
 * Update: Added hook `gfv_add_post_image` to let theme developers add back featured images that were removed with `gfv_remove_post_image`.
 = 1.1.1 =
-* New: Added a hook `gfv_remove_post_image` to let theme developers remove featured images that are inserted with actions this plugin doesn't consider. 
+* New: Added a hook `gfv_remove_post_image` to let theme developers remove featured images that are inserted with actions this plugin doesn't consider.
 = 1.1.0 =
 * New: Added a featured posts widget that allows the featured video to display instead of the featured image. Must use the new "Featured Posts with Videos" widget for videos to display.
 = 1.0.2 =
@@ -140,6 +142,6 @@ function sd_add_post_image(){
 = 1.0.0 =
 * Initial release
 
-== Update Notice ==
-= 1.1.2 =
-* Update: Added hook `gfv_add_post_image` to let theme developers add back featured images that were removed with `gfv_remove_post_image`.
+== Upgrade Notice ==
+= 1.1.3 =
+* Update: Corrected text domain, and minor formatting tweaks.

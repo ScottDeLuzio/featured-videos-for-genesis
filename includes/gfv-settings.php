@@ -74,8 +74,8 @@ function gfv_main_settings() {
 
 //Save footer information
 function save_gfv_settings(){
-  // check the nonce, update the option etc...
-  if( isset( $_POST['update-options'] ) && wp_verify_nonce( 'update-options' ) ) {
+	// check the nonce, update the option etc...
+	if( isset( $_POST['update-options'] ) && wp_verify_nonce( 'update-options' ) ) {
 	if( isset( $_POST['gfv_thumb_width'] ) ) {
 	  $safevalue = preg_replace("/[^0-9]/", "", $_POST['gfv_thumb_width']);
 	  update_option( 'gfv_thumb_width', $safevalue );
