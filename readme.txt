@@ -1,10 +1,10 @@
 === Genesis Featured Video ===
-Contributors: scott.deluzio
+Contributors: scott.deluzio, ampmode
 Tags: Genesis,featured video,featured image
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KFRZN69AUU99U
 Requires at least: 3.1.0
-Tested up to: 5.5.0
-Stable tag: 1.1.4
+Tested up to: 5.8.1
+Stable tag: 1.1.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -127,6 +127,9 @@ function sd_add_post_image(){
 }`
 
 == Changelog ==
+= 1.1.5 =
+* Updated tested up to version.
+* Added Contributors.
 = 1.1.4 =
 * Updated tested up to version.
 = 1.1.3 =
@@ -145,5 +148,6 @@ function sd_add_post_image(){
 * Initial release
 
 == Upgrade Notice ==
-= 1.1.4 =
+= 1.1.5 =
 * Updated tested up to version.
+* Added Contributors.
