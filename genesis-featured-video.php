@@ -3,7 +3,9 @@
 Plugin Name: Featured Videos for Genesis
 Plugin URI: https://amplifyplugins.com
 Description: Adds a video post format with video thumbnail replacing featured image.
-Version: 1.1.5
+Tested up to: 6.0.1
+Version: 1.1.6
+WC tested up to: 6.7.0
 Author: AMP-MODE
 Author URI: https://amplifyplugins.com
 Text Domain: genesis-featured-video
